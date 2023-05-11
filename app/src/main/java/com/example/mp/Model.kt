@@ -11,7 +11,7 @@ class USER {
         this.names = names
         this.email = email
         this.age = age
-        this.time_id = time_id
+        this.time_id = time_id.toString()
     }
     constructor()
 }

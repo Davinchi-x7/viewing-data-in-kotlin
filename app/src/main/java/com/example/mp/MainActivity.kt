@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
             var name = Name.text.toString().trim()
             var email = Email.text.toString().trim()
             var age = Age.text.toString().trim()
-            var time_id = System.currentTimeMillis()
+            var time_id = System.currentTimeMillis().toString()
 
             //progress bar
             var progress = ProgressDialog(this)

@@ -1,6 +1,10 @@
 package layout
 
-mport android.content.Context
+import android.content.Context
+import com.example.mp.R
+import com.example.mp.USER
+
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,7 +12,7 @@ import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
 
-class CustomAdapter(var context: Context, var data:ArrayList<User>):BaseAdapter() {
+class CustomAdapter(var context: Context, var data:ArrayList<USER>):BaseAdapter() {
     private class ViewHolder(row:View?){
         var mTxtName:TextView
         var mTxtEmail:TextView
@@ -31,8 +35,8 @@ class CustomAdapter(var context: Context, var data:ArrayList<User>):BaseAdapter(
             view = convertView
             viewHolder = view.tag as ViewHolder
         }
-        var item:User = getItem(position) as User
-        viewHolder.mTxtName.text = item.name
+        var item:USER = getItem(position) as USER
+        viewHolder.mTxtName.text = item.names
         viewHolder.mTxtEmail.text = item.email
         viewHolder.mTxtAge.text = item.age
         return view as View
