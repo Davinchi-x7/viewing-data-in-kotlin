@@ -12,7 +12,7 @@ import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
 
-class CustomAdapter(var context: Context, var data:ArrayList<USER>):BaseAdapter() {
+class CustomAdapter(var context:Context, var data:ArrayList<USER>):BaseAdapter() {
     private class ViewHolder(row:View?){
         var mTxtName:TextView
         var mTxtEmail:TextView
