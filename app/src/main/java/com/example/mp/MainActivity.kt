@@ -48,8 +48,8 @@ class MainActivity : AppCompatActivity() {
                 child.setValue(user_data).addOnCompleteListener(this){
                     if (it.isSuccessful){
                         Toast.makeText(this, "Data uploaded successfully", Toast.LENGTH_SHORT).show()
-                        var gotoview = Intent(this, view::class.java)
-                        startActivity(gotoview)
+                        var view = Intent(this, tv::class.java)
+                        startActivity(view)
 
                     }else{
                         Toast.makeText(this, "Failed to upload", Toast.LENGTH_SHORT).show()
